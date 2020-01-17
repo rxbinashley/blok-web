@@ -1,0 +1,221 @@
+#header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+
+}
+
+
+.pictures-grid div img {
+    margin-bottom: 30px;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 4px 4px 24px -13px rgba(0,0,0,0.16);
+}
+
+.pictures-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 80px 15px; 
+}
+
+.project-description {
+    margin: 80px 15px; 
+}
+
+.project-description p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 59%;
+    text-align: center;
+}
+
+.project-name {
+    text-align: center;
+}
+
+#my-description {
+    text-align: center;
+}
+
+
+
+
+/* mobile */
+@media (max-width: 768px) {
+    
+
+}
+
+/* tablet */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+
+    
+  }
+
+
+  /* random */
+  @media only screen 
+  and (min-device-width: 800px)  {
+    .project-description p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 500px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    
+  }
+
+
+
+/* desktop */
+@media (min-width: 900px) {
+    #header-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pictures-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px ;   
+        margin: 15px 80px; 
+    }
+
+    .project-description p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 500px;
+        text-align: right;
+        margin: 0px auto;
+    }
+    #my-description {
+        text-align: left;
+    }
+    
+
+}
+
+
+/* animaties van animate.css*/
+
+@-webkit-keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .bounceIn {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
